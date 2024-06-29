@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+}
+
+.main:before {
+  content: ''; 
+  background: url(./assets/weatherbg.jpg) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.header{
+  font-size: 35px;
+}
+
+.inputDiv{
+   margin-top: 4%;
+}
+
+.inputDiv > input{
+  width: 600px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 30px;
+  background: rgba(105, 105, 105,0.65);
+  color: #ffffff;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 2px solid white;
+}
+
+::placeholder{
+  font-size: 17px;
+  color: #aca2a2;
+}
+
+.temp{
+  margin: 5% auto; /* Centering the temp div horizontally */
+  background-color: rgba(105, 105, 105,0.65);
+  width: 200px;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+#city{
+  font-size: 40px;
+}
+
+#temp{
+  font-size: 60px;
+}
+
+.weather-description{
+  margin-top: 4%;
+  width: 1000px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: larger;
+  background-color: rgba(105, 105, 105,0.65);
+  height: 70px;
+  border-radius: 10px;
+}
